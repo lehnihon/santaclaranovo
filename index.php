@@ -1,18 +1,18 @@
 <?php
-get_header('home'); ?>
+get_header(); ?>
 
 <div id="content">
-	<section id="descricao">
+	<section id="produto">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center wow fadeInUp">
-					<h2 class="alexa">Conheça nossos serviços</h2>
+					<h1>Ginásticas e Danças</h1>
 				</div>
 			</div><br><br>
 			<div class="row">
 				<div class="col-md-4 fadeInLeft wow">
 					<div class="box">
-						<div class="img"></div>
+						<img class="img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/massagem.jpg"; ?>"/>
 						<div class="desc-container">
 							<h3>Massagem Clássica Relaxante</h3>
 							<hr>

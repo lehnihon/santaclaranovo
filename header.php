@@ -24,41 +24,42 @@ new WOW().init();
 
 <body <?php body_class(); ?>>
 <div id="page">
-	<header id="headerb" class="header">
+	<header id="header" class="header">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<a href="<?php echo esc_url( home_url( '' ) ); ?>"><img class="logo-header" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-top.png"; ?>"/></a>
-					<div class="redes">
-						<ul class="redes_sociais_header">
-							<li class="youtube"><a target="_blank" href="#"></a></li>
-							<li class="instagram"><a target="_blank" href=""></a></li>
-							<li class="twitter"><a target="_blank" href="#"></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<nav class="navbar navbar-expand-lg navbar-dark">
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="row collapse navbar-collapse" id="navbarSupportedContent">
-							<div class="col-md">
-								<a class="nav-link" href="<?php echo home_url( '/' ); ?>">Início</a>
+						<div class="row no-gutters collapse navbar-collapse" id="navbarSupportedContent">
+							<div class="col-md-auto">
+								<a href="<?php echo esc_url( home_url( '' ) ); ?>"><img class="img-fluid logo-header" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo.jpg"; ?>"/></a>
 							</div>
-							<div class="col-md">
-								<a class="nav-link" href="<?php echo home_url( '/historia' ); ?>">A Unique Massagem</a>
+							<div class="col-md-auto offset-md-1 link">
+								<a class="nav-link" href="<?php echo home_url( '/historia' ); ?>">Início</a>
 							</div>
-							<div class="col-md">
-								<a class="nav-link" href="<?php echo home_url( '/marca-propria' ); ?>">Massagens</a>
+							<div class="col-md-auto link">
+								<a class="nav-link" href="<?php echo home_url( '/marca-propria' ); ?>">A Xtreme</a>
 							</div>
-							<div class="col-md">
-								<a class="nav-link" href="<?php echo home_url( '/distribuicao' ); ?>">Estética</a>
+							<div class="col-md-auto link">
+								<a class="nav-link" href="<?php echo home_url( '/distribuicao' ); ?>">Modalidades</a>
 							</div>
-							<div class="col-md">
-								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Fale Conosco</a>
+							<div class="col-md-auto link">
+								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Blog</a>
+							</div>
+							<div class="col-md-auto link">
+								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Trabalhe Conosco</a>
+							</div>
+							<div class="col-md-auto link">
+								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Contato</a>
+							</div>
+							<div class="col-md redes">
+								<ul class="redes_sociais_header">
+									<li class="youtube"><a target="_blank" href="#"></a></li>
+									<li class="instagram"><a target="_blank" href=""></a></li>
+									<li class="twitter"><a target="_blank" href="#"></a></li>
+								</ul>
 							</div>
 						</div>
 					</nav>
