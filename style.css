@@ -239,6 +239,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page div#content section#contato {
     padding-bottom: 80px;
     background-color: #FFF; }
+    #page div#content section#contato h3 {
+      margin-bottom: 10px; }
     #page div#content section#contato .fone {
       font-size: 28px; }
   @media (max-width: 991px) {
