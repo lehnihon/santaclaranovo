@@ -24,7 +24,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #282828;
   text-align: center;
-  font-size: 18px; }
+  font-size: 16px; }
   #page .insta {
     font-size: 80px; }
   #page a {
@@ -45,15 +45,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
     font-size: 22px;
-    color: #61235f; }
+    color: #ffba00; }
   #page h4 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
-    color: #31302f; }
+    color: #ffba00; }
   #page h5 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 14px;
-    color: #31302f; }
+    font-size: 16px;
+    color: #ffba00; }
   #page .btn-amarelo {
     padding: 10px 50px;
     background-color: #faac11;
@@ -192,23 +192,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       background-color: #7a2a78; }
       #page .header a, #page .headerb a {
         color: #FFF !important; } }
-  #page div#content section#produto {
+  #page div#content section.produto {
     padding-top: 80px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     background-color: #FFF;
     text-align: center; }
-    #page div#content section#produto .box {
+    #page div#content section.produto .box {
       border: 1px solid #e3e3e3;
-      padding-bottom: 20px; }
-    #page div#content section#produto .col-md-4 {
-      margin-bottom: 60px; }
-    #page div#content section#produto h2 {
+      padding-bottom: 20px;
+      border-top: 8px solid #ffba00; }
+    #page div#content section.produto .col-md-4 {
+      margin-bottom: 20px; }
+    #page div#content section.produto h3 {
       margin-top: 20px;
       padding: 0 15px; }
-    #page div#content section#produto hr {
+    #page div#content section.produto hr {
       border-top: 2px solid #61235f;
       width: 20%; }
-    #page div#content section#produto p {
+    #page div#content section.produto p {
       font-size: 16px;
       padding: 10px 15px;
       line-height: 1.6;
@@ -233,21 +234,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       font-size: 16px;
       color: #FFF;
       line-height: 1.7; }
-    #page div#content section#sobre .alexb {
-      color: #faac11; }
     #page div#content section#sobre img {
       margin-bottom: 20px; }
-  #page div#content section#fale-conosco {
-    padding-top: 80px;
-    padding-bottom: 20px;
-    background-color: #FFF; }
   #page div#content section#contato {
-    padding: 100px 0;
+    padding-bottom: 80px;
     background-color: #FFF; }
-    #page div#content section#contato h3 {
-      font-weight: bold;
-      color: #000;
-      margin-bottom: 10px; }
     #page div#content section#contato .fone {
       font-size: 28px; }
   @media (max-width: 991px) {
@@ -258,7 +249,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       background-size: auto !important;
       background-position: -300px top !important; } }
   #page #footer {
-    background: linear-gradient(-90deg, #842b82, #562755);
+    background: #202020;
     color: #FFFFFF;
     padding: 60px 0; }
     #page #footer a {
@@ -289,28 +280,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       width: 68px;
       height: 68px; }
     #page #footer .redes_sociais_header .youtube {
-      background-image: url("images/redes-bot.png");
+      background-image: url("images/redes-bot.jpg");
       background-position: 5px,center;
       background-repeat: no-repeat;
       width: 68px;
       height: 68px;
       display: inline-block; }
     #page #footer .redes_sociais_header .instagram {
-      background-image: url("images/redes-bot.png");
+      background-image: url("images/redes-bot.jpg");
       background-position: -75px,center;
       background-repeat: no-repeat;
       width: 68px;
       height: 68px;
       display: inline-block; }
     #page #footer .redes_sociais_header .twitter {
-      background-image: url("images/redes-bot.png");
+      background-image: url("images/redes-bot.jpg");
       background-position: -160px,center;
       background-repeat: no-repeat;
       width: 68px;
       height: 68px;
       display: inline-block; }
   #page div.copyrino {
-    background-color: #4a1c49;
+    background-color: #1c1b1b;
     text-align: center;
     color: #FFF;
     padding: 40px 0; }

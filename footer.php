@@ -2,21 +2,18 @@
 		<div class="container">
 			<div class="row wow fadeInUp">
 				<div class="col-md-12">
-					<img class="logo-header" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-top.png"; ?>"/>
+					<img class="logo-header" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-bot.jpg"; ?>"/>
 				</div>
-			</div><br>
+			</div><br><br>
 			<div class="row wow fadeInUp">
 				<div class="col-md">
 					<a href="" title="">Página Inicial</a>
 				</div>
 				<div class="col-md">
-					<a href="" title="">A Unique Massagem</a>
+					<a href="" title="">A Xtreme Santa Clara</a>
 				</div>
 				<div class="col-md">
-					<a href="" title="">Massagens</a>
-				</div>
-				<div class="col-md">
-					<a href="" title="">Estética</a>
+					<a href="" title="">Modalidades</a>
 				</div>
 				<div class="col-md">
 					<a href="" title="">Trabalhe Conosco</a>
@@ -31,7 +28,6 @@
 						<li class="youtube"><a target="_blank" href="#"></a></li>
 						<li class="instagram"><a target="_blank" href="#"></a></li>
 						<li class="twitter"><a target="_blank" href="#"></a></li>
-						<li class="facebook"><a target="_blank" href="#"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -41,7 +37,7 @@
 		<div class="container">
 			<div class="row wow fadeInUp">
 				<div class="col-md-12 text-center">
-					<span>&copy; <?php echo date('Y') ?> Unique Massagens Todos os Direitos Reservados</span>
+					<span>&copy; <?php echo date('Y') ?> Academia Xtreme Santa Clara Todos os Direitos Reservados</span>
 					<a target="_blank" class="float-right" href="http://seimidigital.com.br/">
 						<img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>" />
 					</a>
