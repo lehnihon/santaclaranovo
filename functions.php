@@ -57,17 +57,6 @@ function site_setup() {
 		'caption',
 	) );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'site_custom_background_args', array(
@@ -137,32 +126,15 @@ add_action( 'wp_enqueue_scripts', 'site_scripts' );
 function change_post_menu_label() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'Produtos';
-    $submenu['edit.php'][5][0] = 'Produtos';
-    $submenu['edit.php'][10][0] = 'Adicionar Produtos';
+    $menu[5][0] = 'Modalidades';
+    $submenu['edit.php'][5][0] = 'Modalidades';
+    $submenu['edit.php'][10][0] = 'Adicionar Modalidades';
     echo '';
 }
-function change_post_object_label() {
-        global $wp_post_types;
-        $labels = &$wp_post_types['post']->labels;
-        $labels->name = 'Produtos';
-        $labels->singular_name = 'Produto';
-        $labels->add_new = 'Adicionar Produto';
-        $labels->add_new_item = 'Adicionar Produto';
-        $labels->edit_item = 'Editar Produto';
-        $labels->new_item = 'Produto';
-        $labels->view_item = 'Ver Produto';
-        $labels->search_items = 'Procurar Produto';
-        $labels->not_found = 'Produto não encontrado';
-        $labels->not_found_in_trash = 'Sem Produtos na lixeira';
-}
-add_action( 'init', 'change_post_object_label' );
-add_action( 'admin_menu', 'change_post_menu_label' );
 
-
-function register_post_type_fotos(){
-	$singular = 'Foto';
-	$plural = 'Fotos';
+function register_post_type_modalidade(){
+	$singular = 'Modalidade';
+	$plural = 'Modalidades';
 	$labels = array(
 		'name' => $plural,
 		'singular_name' => $singular,
@@ -175,9 +147,36 @@ function register_post_type_fotos(){
         'menu_position' => 5
 		);
 
-	register_post_type('fotos',$args);
+	register_post_type('modalidade',$args);
 }
-add_action(	'init','register_post_type_fotos');
+add_action(	'init','register_post_type_modalidade');
+flush_rewrite_rules();
+function register_taxonomy_modcategoria(){
+    $labels = array(
+        'name'              => _x( 'Categoria', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Categorias', 'taxonomy singular name' ),
+        'search_items'      => __( 'Procurar Categoria' ),
+        'all_items'         => __( 'Todas Categorias' ),
+        'parent_item'       => __( 'Categoria Pai' ),
+        'parent_item_colon' => __( 'Categoria Pai:' ),
+        'edit_item'         => __( 'Editar Categoria' ),
+        'update_item'       => __( 'Atualizar Categoria' ),
+        'add_new_item'      => __( 'Adicionar Categoria' ),
+        'new_item_name'     => __( 'Nome Nova Categoria' ),
+        'menu_name'         => __( 'Categoria' ),
+    );
+ 
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true
+    );
+	register_taxonomy( 'modcategoria', 'modalidade', $args );
+}
+add_action('init','register_taxonomy_modcategoria');
+
 
 function get_the_twitter_excerpt(){
 	$excerpt = get_the_content();

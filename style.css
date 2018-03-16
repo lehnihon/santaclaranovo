@@ -79,6 +79,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page .input-contato:active, #page .input-contato:hover, #page .input-contato:focus, #page .input-message:active, #page .input-message:hover, #page .input-message:focus {
     border: 0;
     outline: 0; }
+  #page .videoWrapperb {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0; }
+  #page .videoWrapperb iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   #page .btn-contato {
     padding: 5px 0;
     border: 0;
@@ -120,7 +132,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     color: #ed4021 !important; }
   #page #header {
     border-bottom: 8px solid #f1ae01;
-    background-color: #202020; }
+    background-color: #202020;
+    padding-top: 10px; }
     #page #header nav {
       padding: 0; }
       #page #header nav a {
@@ -192,6 +205,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       background-color: #7a2a78; }
       #page .header a, #page .headerb a {
         color: #FFF !important; } }
+  #page div#content #breadcrumbs {
+    padding-bottom: 15px; }
   #page div#content section.produto {
     padding-top: 80px;
     padding-bottom: 60px;
@@ -212,8 +227,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     #page div#content section.produto p {
       font-size: 16px;
       padding: 10px 15px;
-      line-height: 1.6;
-      color: #abb1b8; }
+      line-height: 1.6; }
+  #page div#content section.modalidades {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #FFF;
+    text-align: center; }
+    #page div#content section.modalidades .box {
+      border: 1px solid #e3e3e3;
+      padding-bottom: 20px;
+      border-top: 8px solid #ffba00; }
+    #page div#content section.modalidades .col-md-4 {
+      margin-bottom: 20px; }
+    #page div#content section.modalidades h3 {
+      margin-top: 20px;
+      padding: 0 15px;
+      margin-bottom: 10px; }
+    #page div#content section.modalidades p {
+      font-size: 16px;
+      padding: 3px 15px;
+      margin: 0; }
   #page div#content section#sobre {
     padding: 160px 0;
     background-image: url("images/background2.jpg");
@@ -236,6 +269,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       line-height: 1.7; }
     #page div#content section#sobre img {
       margin-bottom: 20px; }
+  #page div#content section#sobre-detalhes {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: left; }
+    #page div#content section#sobre-detalhes h1 {
+      margin-bottom: 25px;
+      color: #282828; }
+    #page div#content section#sobre-detalhes img {
+      margin-bottom: 20px; }
   #page div#content section#contato {
     padding-bottom: 80px;
     background-color: #FFF; }
@@ -243,6 +285,49 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       margin-bottom: 10px; }
     #page div#content section#contato .fone {
       font-size: 28px; }
+  #page div#content section#detalhes {
+    padding-top: 40px;
+    padding-bottom: 60px; }
+    #page div#content section#detalhes .img-detalhes {
+      border-top: 8px solid #ffba00; }
+    #page div#content section#detalhes .desc-detalhes {
+      margin-left: 10px; }
+  #page section#blog {
+    padding-top: 40px;
+    padding-bottom: 60px; }
+    #page section#blog h1 {
+      margin-top: 15px; }
+    #page section#blog h2 {
+      min-height: 44px;
+      margin-top: 15px; }
+      #page section#blog h2 a {
+        color: #232323; }
+    #page section#blog article.article-single {
+      margin-bottom: 50px; }
+    #page section#blog .confira {
+      margin-top: 20px;
+      font-weight: bold; }
+    #page section#blog div.paginacao {
+      margin: 50px 0; }
+    #page section#blog a {
+      color: #e7aa07; }
+    #page section#blog article.linha-blog {
+      border-bottom: 2px solid #f2cd30;
+      padding-bottom: 15px;
+      margin-bottom: 15px; }
+    #page section#blog form.search-form {
+      margin-bottom: 25px; }
+      #page section#blog form.search-form input.pesquisar-input {
+        background-color: #e4e4e4;
+        border: 0;
+        float: left;
+        padding: 6.5px 10px;
+        border-radius: 10px 0px 0px 10px;
+        width: 90%; }
+      #page section#blog form.search-form input.pesquisar-submit {
+        float: left; }
+  #page #orcamento {
+    padding-bottom: 60px; }
   @media (max-width: 991px) {
     #page section#sobre {
       -webkit-background-size: auto !important;
@@ -253,7 +338,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page #footer {
     background: #202020;
     color: #FFFFFF;
-    padding: 60px 0; }
+    padding: 60px 0;
+    border-top: 8px solid #f1ae01; }
     #page #footer a {
       color: #FFF; }
     #page #footer h3 {
@@ -317,6 +403,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
           color: #FFF; }
         #page div.copyrino ul li a:hover {
           color: #cd4228; }
+
+.paginacao .page-numbers {
+  padding: 5px;
+  background-color: #ececec; }
+.paginacao .current {
+  background-color: #ffc700; }
 
 .wow {
   visibility: hidden; }

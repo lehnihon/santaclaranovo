@@ -40,13 +40,13 @@ new WOW().init();
 								<a class="nav-link" href="<?php echo home_url( '/historia' ); ?>">Início</a>
 							</div>
 							<div class="col-md-auto link">
-								<a class="nav-link" href="<?php echo home_url( '/marca-propria' ); ?>">A Xtreme</a>
+								<a class="nav-link" href="<?php echo home_url( '/sobre' ); ?>">A Xtreme</a>
 							</div>
 							<div class="col-md-auto link">
-								<a class="nav-link" href="<?php echo home_url( '/distribuicao' ); ?>">Modalidades</a>
+								<a class="nav-link" href="<?php echo home_url( '/modalidades' ); ?>">Modalidades</a>
 							</div>
 							<div class="col-md-auto link">
-								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Blog</a>
+								<a class="nav-link" href="<?php echo home_url( '/blog' ); ?>">Blog</a>
 							</div>
 							<div class="col-md-auto link">
 								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Trabalhe Conosco</a>

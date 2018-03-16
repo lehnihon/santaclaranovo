@@ -9,32 +9,27 @@ get_header(); ?>
 
 <div id="content">
 	<section id="detalhes">
+		<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 		<div class="container">
+			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="row">
-				<div class="col-md-12 text-center wow fadeInUp">
-					<?php
-					global $post;
-					$cat = get_the_category( $post->ID );
-					?>
-					<h2 class="alexa"><?php echo $cat[0]->name; ?></h2>
-				</div>
-			</div><br><br>
-			<div class="row">
-				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="col-md-5">
+				<div class="col-md-5 wow fadeIn">
+					<div class="img-detalhes">
 					<?php the_post_thumbnail('', array(
 						'class' => "e-cinza img-fluid",
 					)); ?>
+					</div>
 				</div>
-				<div class="col-md-7 text-left">
-					<h3><?php the_title(); ?></h3>
-					<hr>
-					<?php the_content(); ?>
+				<div class="col-md-7 wow fadeIn text-left">
+					<div clas="desc-detalhes">
+						<h1><?php the_title(); ?></h1>
+
+						<?php the_content(); ?>
+					</div>
 				</div>
-				<?php endwhile; // End of the loop. ?>
 			</div>
+			<?php endwhile; // End of the loop. ?>
 		</div>
 	</section>
-	<?php get_template_part( 'template-parts/contato' ); ?>
 </div><!-- #content -->
 <?php get_footer(); ?>

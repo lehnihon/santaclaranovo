@@ -56,7 +56,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<p class="alexb fadeInUp wow">Conheça a</p>
+					<p class="fadeInUp wow">Conheça a</p>
 					<h1 class="fadeInUp wow">Unique Massagem</h1>
 					<p class="fadeInUp wow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt ut labore et dolore 
