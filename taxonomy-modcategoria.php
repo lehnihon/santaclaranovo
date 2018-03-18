@@ -1,7 +1,6 @@
 <?php
 get_header(); 
-$category = get_the_category();
-var_dump($category);
+$term = get_query_var( 'term' );
 ?>
 
 <div id="content">
@@ -18,7 +17,7 @@ var_dump($category);
 			<?php 
 			$i = 1;
 			$args = array(
-				'tax_query' => array(array('taxonomy' => 'modcategoria', 'field' => 'slug', 'terms' => $category[0]->name) ),
+				'tax_query' => array(array('taxonomy' => 'modcategoria', 'field' => 'slug', 'terms' => $term) ),
 				'post_type' => 'modalidade',
 			    'orderby' => 'post_date',
 			    'order' => 'DESC');

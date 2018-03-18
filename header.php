@@ -37,7 +37,7 @@ new WOW().init();
 								<a href="<?php echo esc_url( home_url( '' ) ); ?>"><img class="img-fluid logo-header" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo.jpg"; ?>"/></a>
 							</div>
 							<div class="col-md-auto offset-md-1 link">
-								<a class="nav-link" href="<?php echo home_url( '/historia' ); ?>">Início</a>
+								<a class="nav-link" href="<?php echo home_url( '' ); ?>">Início</a>
 							</div>
 							<div class="col-md-auto link">
 								<a class="nav-link" href="<?php echo home_url( '/sobre' ); ?>">A Xtreme</a>
@@ -49,14 +49,11 @@ new WOW().init();
 								<a class="nav-link" href="<?php echo home_url( '/blog' ); ?>">Blog</a>
 							</div>
 							<div class="col-md-auto link">
-								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Trabalhe Conosco</a>
-							</div>
-							<div class="col-md-auto link">
 								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Contato</a>
 							</div>
 							<div class="col-md redes">
 								<ul class="redes_sociais_header">
-									<li class="youtube"><a target="_blank" href="#"></a></li>
+									<li class="youtube"><a target="_blank" href=""></a></li>
 									<li class="instagram"><a target="_blank" href=""></a></li>
 									<li class="twitter"><a target="_blank" href="#"></a></li>
 								</ul>

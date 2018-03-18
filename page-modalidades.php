@@ -24,7 +24,7 @@ get_header(); ?>
 								echo "<p>".get_the_title()."</p>";
 							endwhile;
 							?><br><br>
-							<a class="btn-amarelo" href="<?php echo home_url( '/categoria/lutas' ); ?>">saiba mais</a>
+							<a class="btn-amarelo" href="<?php echo home_url( '/modalidades/lutas' ); ?>">saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -40,7 +40,7 @@ get_header(); ?>
 								echo "<br>";
 							endwhile;
 							?><br><br>
-							<a class="btn-amarelo" href="<?php echo home_url( '/categoria/ginasticas' ); ?>">saiba mais</a>
+							<a class="btn-amarelo" href="<?php echo home_url( '/modalidades/ginasticas' ); ?>">saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -56,7 +56,7 @@ get_header(); ?>
 								echo "<br>";
 							endwhile;
 							?><br><br>
-							<a class="btn-amarelo" href="<?php echo home_url( '/categoria/dancas-e-yoga' ); ?>">saiba mais</a>
+							<a class="btn-amarelo" href="<?php echo home_url( '/modalidades/dancas-e-yoga' ); ?>">saiba mais</a>
 						</div>
 					</div>
 				</div>

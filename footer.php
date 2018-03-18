@@ -7,19 +7,19 @@
 			</div><br><br>
 			<div class="row wow fadeInUp">
 				<div class="col-md">
-					<a href="" title="">Página Inicial</a>
+					<a href="" title="<?php echo home_url( '' ); ?>">Página Inicial</a>
 				</div>
 				<div class="col-md">
-					<a href="" title="">A Xtreme Santa Clara</a>
+					<a href="" title="<?php echo home_url( '/sobre' ); ?>">A Xtreme Santa Clara</a>
 				</div>
 				<div class="col-md">
-					<a href="" title="">Modalidades</a>
+					<a href="" title="<?php echo home_url( '/modalidades' ); ?>">Modalidades</a>
 				</div>
 				<div class="col-md">
-					<a href="" title="">Trabalhe Conosco</a>
+					<a href="" title="<?php echo home_url( '/blog' ); ?>">Blog</a>
 				</div>
 				<div class="col-md">
-					<a href="" title="">Contato</a>
+					<a href="" title="<?php echo home_url( '/contato' ); ?>">Contato</a>
 				</div>
 			</div><br>
 			<div class="row wow fadeInUp">

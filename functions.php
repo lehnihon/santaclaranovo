@@ -64,7 +64,7 @@ function site_setup() {
 		'default-image' => '',
 	) ) );
 
-	add_image_size('home-thumb',780,300,true);
+	add_image_size('home-thumb',600,800,true);
 }
 endif; // site_setup
 add_action( 'after_setup_theme', 'site_setup' );
@@ -171,7 +171,8 @@ function register_taxonomy_modcategoria(){
         'labels'            => $labels,
         'show_ui'           => true,
         'show_admin_column' => true,
-        'query_var'         => true
+        'query_var'         => true,
+        'rewrite' => array( 'slug' => 'modalidades' )
     );
 	register_taxonomy( 'modcategoria', 'modalidade', $args );
 }
@@ -182,7 +183,7 @@ function get_the_twitter_excerpt(){
 	$excerpt = get_the_content();
 	$excerpt = strip_shortcodes($excerpt);
 	$excerpt = strip_tags($excerpt);
-	$the_str = substr($excerpt, 0, 140)." [...]";
+	$the_str = substr($excerpt, 0, 70)." [...]";
 	return $the_str;
 }
 

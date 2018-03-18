@@ -68,24 +68,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page .btn-amarelo:hover {
     background-color: #FFF; }
   #page .input-contato {
-    background-color: #FFF;
+    background-color: #eaeaea;
     text-align: left;
-    border: 1px solid #abb1b8;
+    border: 1px solid #eaeaea;
     width: 100%;
     margin-bottom: 10px;
     padding: 5px 20px; }
-  #page .input-contato::placeholder {
-    color: #9e3a27 !important; }
-  #page .input-contato:active, #page .input-contato:hover, #page .input-contato:focus, #page .input-message:active, #page .input-message:hover, #page .input-message:focus {
-    border: 0;
-    outline: 0; }
-  #page .videoWrapperb {
+  #page .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
     /* 16:9 */
     padding-top: 25px;
     height: 0; }
-  #page .videoWrapperb iframe {
+  #page .videoWrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -189,7 +184,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page div#banner {
     position: relative; }
   #page .fixar {
-    padding: 0px !important;
+    padding: 5px !important;
     position: fixed !important;
     z-index: 1000 !important;
     margin-top: 0px !important;
@@ -201,14 +196,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       display: none !important; }
     #page .redes {
       display: none !important; }
-    #page .header, #page .headerb {
+    #page .header {
+      padding: 5px !important;
       background-color: #7a2a78; }
-      #page .header a, #page .headerb a {
+      #page .header a {
         color: #FFF !important; } }
   #page div#content #breadcrumbs {
     padding-bottom: 15px; }
   #page div#content section.produto {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 60px;
     background-color: #FFF;
     text-align: center; }
@@ -279,12 +275,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     #page div#content section#sobre-detalhes img {
       margin-bottom: 20px; }
   #page div#content section#contato {
-    padding-bottom: 80px;
-    background-color: #FFF; }
+    padding-bottom: 80px; }
     #page div#content section#contato h3 {
       margin-bottom: 10px; }
     #page div#content section#contato .fone {
       font-size: 28px; }
+  #page div#content section#contato-pag {
+    padding-top: 40px;
+    padding-bottom: 60px; }
   #page div#content section#detalhes {
     padding-top: 40px;
     padding-bottom: 60px; }
