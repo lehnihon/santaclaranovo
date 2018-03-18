@@ -201,8 +201,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       background-color: #7a2a78; }
       #page .header a {
         color: #FFF !important; } }
-  #page div#content #breadcrumbs {
-    padding-bottom: 15px; }
   #page div#content section.produto {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -401,6 +399,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
           color: #FFF; }
         #page div.copyrino ul li a:hover {
           color: #cd4228; }
+
+#breadcrumbs {
+  padding-bottom: 15px; }
 
 .paginacao .page-numbers {
   padding: 5px;
