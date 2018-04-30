@@ -4,13 +4,15 @@
 			<div class="col-md-5 offset-md-1 text-left">
 				<p>
 					<h3>Endereço</h3>
-					Rua Buenópolis, 134 - Vila Santa Clara<br>
-					São Paulo - SP
+					Rua Buenópolis, 134<br>
+					Vila Santa Clara - São Paulo - SP<br>
+					CEP 03161-010 - Brasil<br>
+					<a class="amarelo" href="" title="">como chegar</a>
 				</p>
 				<p>
 					<h3>Contatos</h3>
-					<span class="fone">11 94026-0095<br>11 3554-7555</span><br>
-					contato@xtremesantaclara.com.br
+					<span class="fone">11 3554-7555</span><br>
+					atendimento@xtremesantaclara.com.br
 				</p>
 			</div>
 			<div class="col-md-5 text-left">

@@ -9,6 +9,7 @@ get_header(); ?>
 
 <div id="content">
 	<section id="contato-pag">
+		<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-left wow fadeIn">

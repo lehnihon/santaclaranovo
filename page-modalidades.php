@@ -15,7 +15,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-md-4 fadeInUp wow">
 					<div class="box">
-						<img class="img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/massagem.jpg"; ?>"/>
+						<img class="img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Academia Xtreme Santa Clara Lutas.jpg"; ?>"/>
 						<div class="desc-container">
 							<h3>Lutas</h3>
 							<?php
@@ -30,7 +30,7 @@ get_header(); ?>
 				</div>
 				<div class="col-md-4 fadeInUp wow" data-wow-delay="0.25s">
 					<div class="box">
-						<img class="img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/massagem.jpg"; ?>"/>
+						<img class="img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Academia Xtreme Santa Clara Ginasticas.jpg"; ?>"/>
 						<div class="desc-container">
 							<h3>Ginásticas</h3>
 							<?php
@@ -46,7 +46,7 @@ get_header(); ?>
 				</div>
 				<div class="col-md-4 fadeInUp wow" data-wow-delay="0.5s">
 					<div class="box">
-						<img class="img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/massagem.jpg"; ?>"/>
+						<img class="img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Academia Xtreme Santa Clara Dancas e Yoga.jpg"; ?>"/>
 						<div class="desc-container">
 							<h3>Danças e Yoga</h3>
 							<?php

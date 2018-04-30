@@ -13,14 +13,14 @@ get_header(); ?>
 		<div class="container">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="row">
-				<div class="col-md-5 wow fadeIn">
+				<div class="col-md-auto wow fadeIn">
 					<div class="img-detalhes">
 					<?php the_post_thumbnail('', array(
 						'class' => "e-cinza img-fluid",
 					)); ?>
 					</div>
 				</div>
-				<div class="col-md-7 wow fadeIn text-left">
+				<div class="col-md wow fadeIn text-left">
 					<div clas="desc-detalhes">
 						<h1><?php the_title(); ?></h1>
 

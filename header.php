@@ -15,6 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="shortcut icon" type="image/png" href="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Academia-Xtreme-Santa-Clara-Favicon.png"; ?>" />
 <?php wp_head(); ?>
 <script>
 new WOW().init();
@@ -23,6 +24,9 @@ new WOW().init();
 </head>
 
 <body <?php body_class(); ?>>
+<div id="preloader">
+  <div id="status" class="wow fadeIn">&nbsp;</div>
+</div>
 <div id="page">
 	<header id="header" class="header">
 		<div class="container">
@@ -46,16 +50,22 @@ new WOW().init();
 								<a class="nav-link" href="<?php echo home_url( '/modalidades' ); ?>">Modalidades</a>
 							</div>
 							<div class="col-md-auto link">
-								<a class="nav-link" href="<?php echo home_url( '/blog' ); ?>">Blog</a>
+								<a class="nav-link" href="<?php echo home_url( '/horarios' ); ?>">Horários</a>
+							</div>
+							<div class="col-md-auto link">
+								<a class="nav-link" href="<?php echo home_url( '/aula-experimental' ); ?>">Aula Experimental</a>
+							</div>
+							<div class="col-md-auto link">
+								<a target="_blank" class="nav-link" href="<?php echo home_url( '/blog' ); ?>">Blog</a>
 							</div>
 							<div class="col-md-auto link">
 								<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">Contato</a>
 							</div>
 							<div class="col-md redes">
 								<ul class="redes_sociais_header">
-									<li class="youtube"><a target="_blank" href=""></a></li>
-									<li class="instagram"><a target="_blank" href=""></a></li>
-									<li class="twitter"><a target="_blank" href="#"></a></li>
+									<li class="youtube"><a target="_blank" href="https://www.youtube.com/user/academiaxtremegold"></a></li>
+									<li class="instagram"><a target="_blank" href="https://www.instagram.com/xtremesantaclara/"></a></li>
+									<li class="twitter"><a target="_blank" href="https://www.facebook.com/xtremesantaclara/"></a></li>
 								</ul>
 							</div>
 						</div>

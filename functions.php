@@ -107,6 +107,8 @@ function site_scripts() {
 	wp_enqueue_style( 'site-style-bxslider', get_template_directory_uri() ."/js/jquery.bxslider.css" );
 	wp_enqueue_style( 'site-style-animate', get_template_directory_uri() ."/animate.css" );
 	wp_enqueue_style( 'site-style-lightbox', get_template_directory_uri() ."/js/lightbox2/src/css/lightbox.css" );
+	wp_enqueue_style( 'site-style-owl', get_template_directory_uri() ."/owl.carousel.min.css" );
+	wp_enqueue_style( 'site-style-owl-theme', get_template_directory_uri() ."/owl.theme.default.min.css" );
 	wp_enqueue_style( 'site-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'site-script-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js');
@@ -116,6 +118,7 @@ function site_scripts() {
 	wp_enqueue_script( 'site-script-bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js',array(),false,true);
 	wp_enqueue_script( 'site-script-lightbox', get_template_directory_uri() . '/js/lightbox2/src/js/lightbox.js',array(),false,true);
 	wp_enqueue_script( 'site-script-wow', get_template_directory_uri() . '/js/wow.min.js',array());
+	wp_enqueue_script( 'site-script-owl', get_template_directory_uri() . '/js/owl.carousel.min.js',array(),false,true);
 	wp_enqueue_script( 'site-script-site', get_template_directory_uri() . '/js/script.js',array(),false,true);
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
